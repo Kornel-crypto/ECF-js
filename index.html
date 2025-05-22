@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recettes du Monde</title>
-  <link rel="stylesheet" href="/assets/style/styles.css" />
-</head>
-<body>
-  <header>
-    <h1>🍲 Recettes du Monde</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recettes du Monde</title>
+    <link rel="stylesheet" href="/assets/style/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🍲 Recettes du Monde</h1>
+    </header>
 
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="🔍 Rechercher une recette..." />
-  </div>
+    <div class="search-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Rechercher une recette..."
+      />
+    </div>
 
-  <section class="recipes-grid" id="recipesContainer">
-    <article class="recipe-card">
+    <section class="recipes-grid" id="recipesContainer">
+      <!-- <article class="recipe-card">
       <h2>Poisson Cru à la tahitienne</h2>
       <p><strong>Nombre de personnes :</strong> 2</p>
       <ul>
@@ -27,33 +31,24 @@
         <li>5 Citrons Verts</li>
         <li>100 ml de Lait de Coco</li>
       </ul>
-    </article>
+    </article> -->
 
-    <article class="recipe-card">
-      <h2>Poulet au Curry</h2>
-      <p><strong>Nombre de personnes :</strong> 4</p>
-      <ul>
-        <li>500 grammes de Poulet</li>
-        <li>1 Oignon</li>
-        <li>2 Ails</li>
-        <li>200 ml de Lait de Coco</li>
-        <li>2 cuillères à soupe de Pâte de Curry</li>
-        <li>1 cuillère à soupe d’Huile</li>
-      </ul>
-    </article>
+      <div class="conteneurRecette"></div>
+    </section>
 
-    <article class="recipe-card">
-      <h2>Spaghetti Bolognaise</h2>
-      <p><strong>Nombre de personnes :</strong> 3</p>
-      <ul>
-        <li>300 grammes de Viande hachée</li>
-        <li>1 Oignon</li>
-        <li>2 Tomates</li>
-        <li>300 grammes de Spaghetti</li>
-        <li>1 cuillère à soupe d’Huile d’olive</li>
-        <li>Sel, Poivre</li>
-      </ul>
-    </article>
-  </section>
-</body>
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <button id="closeBtn">Fermer</button>
+        <h2 id="popupTitle"></h2>
+        <p><strong>⏱ Temps :</strong> <span id="popupTime"></span> min</p>
+        <p>
+          <strong>Description :</strong> <span id="popupDescription"></span>
+        </p>
+        <p><strong>Appareil :</strong> <span id="popupAppliance"></span></p>
+        <p><strong>Ustensiles :</strong> <span id="popupUstensils"></span></p>
+      </div>
+    </div>
+
+    <script src="assets/script/script.js"></script>
+  </body>
 </html>

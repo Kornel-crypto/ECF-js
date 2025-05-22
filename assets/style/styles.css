@@ -77,3 +77,38 @@ header h1 {
 .recipe-card li {
   margin-bottom: 6px;
 }
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* fond gris foncé transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.hidden {
+  display: none;
+}
+
+#closeBtn {
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
